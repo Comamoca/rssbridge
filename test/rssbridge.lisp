@@ -5,5 +5,6 @@
 (def-suite :rssbridge)
 (in-suite :rssbridge)
 
-(test fib-test
-  (is (= (fib 10) 55)))
+;; Sample testcase
+;; (test fib-test
+;;   (is (= (fib 10) 55)))
