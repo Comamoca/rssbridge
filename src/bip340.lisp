@@ -1,6 +1,5 @@
-
 ;; This program is a modified version of akovalenko/bip0340 (Public Domain) program written by akovalenko.
-;; Repository: https://github.com/akovalenko/bip0340
+;; Original source: https://github.com/akovalenko/bip0340
 
 (defpackage #:rssbridge/src/bip340
   (:use #:cl)
