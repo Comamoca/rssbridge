@@ -75,33 +75,3 @@
 	 (utf8-bytes (babel:string-to-octets input-string :encoding :utf-8))
 	 (hash (crypto:digest-sequence :sha256 utf8-bytes)))
     (crypto:byte-array-to-hex-string hash)))
-
-
-;; (bytes->hex (hex->bytes "cafe0123"))
-
-;; (nth 202 (generate-hexes))
-
-;; (format nil "~2,'0x" "ca")
-;; (defun add (a b)
-;;   (+ a b))
-
-;; (funcall (alexandria:curry #'add 1) 1)
-
-;; (parse-integer "ca" :radix 16)
-;; (parse-integer "fe" :radix 16)
-
-
-
-;; (bytes->hex '(202 254 1 35))
-;; (ascii->base16 (char-code (coerce "1" 'character)))
-;; (length "cafe0123")
-
-
-;; (asdf:load-system :arrows)
-;; (asdf:load-system :alexandria)
-;; (asdf:load-system :cl-ppcre)
-;; (asdf:load-system :babel)
-;; (asdf:load-system :ironclad)
-;; (asdf:load-system :local-time)
-;; (asdf:load-system :split-sequence)
-
