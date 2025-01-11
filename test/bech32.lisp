@@ -5,7 +5,7 @@
 (def-suite :rssbridge/bech32)
 (in-suite :rssbridge/bech32)
 
-
+;; Datas for testing
 (let ((VALID_BECH32 '("A12UEL5L"
 		      "a12uel5l"
 		      "an83characterlonghumanreadablepartthatcontainsthenumber1andtheexcludedcharactersbio1tt5tgs"
@@ -100,9 +100,8 @@
 			     '("bc" 16 41)))))
 
 
-;; TODO: bech32のテストを書く
+;; TODO: Write tests for bech32
 
-;; bech32-decode関数
-
-;; - bechはCHARSETに含まてれている文字列で構成されている必要がある 。
-;; - もしバリデーションに反していたら'(nil nil nil)を返す。
+;; NOTE: bech32-decode function
+;; - bech must consist of strings contained in CHARSET
+;; - Ifvalidation is violated, return '(nil nil nil)
